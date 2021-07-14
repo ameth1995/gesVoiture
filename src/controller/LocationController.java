@@ -1,9 +1,10 @@
 package controller;
 
+import java.net.URL;
+
 import config.Rooting;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 
@@ -15,7 +16,7 @@ public class LocationController {
 	    @FXML
 	    void addLocation(ActionEvent event) {
 	    	
-	    	Parent root =FXML.Loade(getClass().getResource( "/view/" + Rooting.ADDLOCATION));
+	    	Parent root =FXMLLoader(getClass().getResource( "/view/" + Rooting.ADDLOCATION));
 	    	
 	    	main.setCenter(root);
 
@@ -24,9 +25,14 @@ public class LocationController {
 	    @FXML
 	    void searchLocation(ActionEvent event) {
 
-Parent root =FXML.Loade(getClass().getResource( "/view/" + Rooting.LISTELOCATION));
+Parent root =FXMLLoader(getClass().getResource( "/view/" + Rooting.LISTELOCATION));
 	    	
 	    	main.setCenter(root);
 	    }
+
+		private Parent FXMLLoader(URL resource) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 }
