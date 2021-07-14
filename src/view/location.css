@@ -1,0 +1,14 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.pane{
+
+	-fx-border-color: #025205;
+	-fx-border-radius: 50px;
+	-fx-background-color: #fff;
+
+}
+.label-sur-pane{
+	-fx-background-color: #fff;
+	-fx-border-color: #025205;
+	-fx-border-radius: 30px;
+}

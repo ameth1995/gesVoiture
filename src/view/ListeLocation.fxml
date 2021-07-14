@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="832.0" prefWidth="1152.0" style="-fx-background-color: #fff;" stylesheets="@location.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeLocationController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="1144.0" style="-fx-background-color: #025205;">
+         <children>
+            <Label alignment="CENTER" text="Rechercher Location" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="locTable" prefHeight="865.0" prefWidth="1152.0">
+        <columns>
+          <TableColumn fx:id="date_column" prefWidth="189.0" text="Date" />
+          <TableColumn fx:id="mate_column" minWidth="7.0" prefWidth="188.0" text="Mat  Vehicule" />
+            <TableColumn fx:id="numcrt_column" prefWidth="187.0" text="Num carte grise" />
+            <TableColumn fx:id="nom_column" prefWidth="204.0" text="Nom locataire" />
+            <TableColumn fx:id="prenom_column" prefWidth="185.0" text="Prenom locataire" />
+            <TableColumn fx:id="montant_column" prefWidth="198.0" text="Montant" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

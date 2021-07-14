@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="main" prefHeight="850.0" prefWidth="1180.0" style="-fx-background-color: #fff;" styleClass="label" stylesheets="@location.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="1180.0" style="-fx-background-color: #025205#025205;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Gestion Location" textFill="WHITE">
+               <font>
+                  <Font name="Academy Engraved LET Plain:1.0" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="796.0" prefWidth="198.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="MENU">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#addLocation" prefWidth="150.0" text="Ajouter Location">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="82.0" layoutY="30.0" mnemonicParsing="false" onAction="#searchLocation" prefWidth="150.0" text="Rechercher Location">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
